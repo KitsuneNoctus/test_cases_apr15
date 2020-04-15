@@ -36,16 +36,37 @@ def dna_comparison(arr, nums):
         if i != j:
             count += 1
     return count
+#Good cases
+# arr = "GAGCCTACTAACGGGAT"
+# nums = "GAGCCTACTAACGGGAT"
 arr = "GAGCCTACTAACGGGAT"
 nums = "CATCGTAATGACGGCCT"
 print(dna_comparison(arr, nums))
-# edge cases
-# arr1 = ‘zdfgnghxnhgxn’
+arr = "jk"
+nums = ["j","k"]
+# nums = {"j":1,"k":2}
+print(dna_comparison(arr, nums))
+
+#Bad Cases
+# arr = 39640 - its not iterable
+# nums = "Lazy"
+#------
+# arr = 45-6
+# nums = "e"
+
+
+print("----------")
+# print(dna_comparison("", ""))
+
+
+
+# Edge cases
+# arr1 = ‘zdfgnghxnhgxn’ - not same length
 # nums1 = ‘xvbgf’
 # print(dna_comparison(arr1, nums1))
 arr2 = ""
 nums2 = "jarquevious"
 print(dna_comparison(arr2, nums2))
-arr3 = "JARQUEVIOUS"
+arr3 = "JARQUEVIOUS" #Runs as different due to casing
 nums3 = "jarquevious"
 print(dna_comparison(arr3, nums3))

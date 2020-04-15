@@ -49,10 +49,11 @@ print(is_isogram("isograms"))
 # #Bad Test Cases
 # print("Bad Test")
 # print(is_isogram(12456)) int isnt iterable
+# print(is_isogram(124-5+6))
 
 #Edge Cases
 # list = ["a",7,"c"]
 # print(is_isogram(list))
 # print(is_isogram("iSograms"))
 # print(is_isogram("")) #return true
-# print(is_isogram("1234567890qwertyuiopasdfghjklzxcvbnm,./;[]{}"))
+# print(is_isogram("1234567890qwertyuiopasdfghjklzxcvbnm,./;[]{}")) - Impossible to go too long with normal characters
